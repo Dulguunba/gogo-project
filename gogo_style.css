@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 1250px;
+  margin: auto;
+}
+/* header styling */
+header {
+  display: flex;
+  padding-top: 3px;
+  padding-top: 3px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.header_flexstart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header_info {
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+  padding: 0px 15px;
+}
+.header_flexend {
+  display: flex;
+  justify-content: flex-end;
+}
+.header_general {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  row-gap: 7px;
+}
+.header_general_sub {
+  display: flex;
+  gap: 10px;
+}
+.header_hover {
+  position: relative;
+  opacity: 0;
+}
+/* header texting styles */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.header_subheading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: right;
+}
+.header_quantity {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: 500;
+}
+/* header icon styles */
+i {
+  align-self: center;
+  margin-left: 5px;
+}
+.header_general #weather {
+  color: rgb(233, 167, 45);
+}
+.header_general #calendar {
+  color: rgb(54, 157, 212);
+}
+.header_general #FX {
+  color: rgb(86, 221, 45);
+}
+.header_flexstart i {
+  margin-left: 20px;
+}
+.header_general_sub span {
+  color: rgb(188, 179, 179);
+}
