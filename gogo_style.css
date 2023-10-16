@@ -85,9 +85,12 @@ i {
 .top_news_container {
   display: flex;
   margin-top: 50px;
+  position: relative;
 }
 .top_news_info {
-  width: 50%;
+  width: 45%;
+
+  left: 0;
   display: flex;
   flex-direction: column;
   padding: 80px 40px;
@@ -95,6 +98,20 @@ i {
   border-radius: 10px;
   background-image: linear-gradient(90deg, #f4f2f0, #ffffff);
   text-shadow: 1px 1px 1px hsla(0, 33%, 19%, 0.004);
+}
+.opacity_readnews {
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+}
+.img_top_news:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.img_top_news:hover {
+  display: visible;
 }
 .yellow_round {
   padding: 8px 15px;
@@ -118,7 +135,10 @@ i {
 }
 .img_top_news {
   width: 50%;
+  height: 100%;
   border-radius: 5px;
+  position: absolute;
+  left: 50%;
 }
 /* top news font styles */
 h2 {
@@ -180,20 +200,20 @@ h3 {
   font-size: 13px;
 }
 /* gogo story styles */
-.gogostory{
+.gogostory {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-.gogostory_title{
+.gogostory_title {
   display: flex;
 }
-.gogostory_container{
+.gogostory_container {
   display: flex;
   justify-content: space-around;
 }
-.gogostory_box{
+.gogostory_box {
   display: flex;
   flex-direction: column;
   width: 15%;
@@ -204,34 +224,34 @@ h3 {
   border-radius: 5px;
   position: relative;
 }
-#story1{
+#story1 {
   background-image: url(https://mgl.gogo.mn/newsn/story/jims-652a16b7015d4276129668.jpeg);
 }
-#story2{
+#story2 {
   background-image: url(https://mgl.gogo.mn/newsn/story/1-652a162a32c25283591857.jpeg);
 }
-#story3{
+#story3 {
   background-image: url(https://mgl.gogo.mn/newsn/story/hulgai-6528e1a0536bf106260238.jpg);
 }
-#story4{
+#story4 {
   background-image: url(https://mgl.gogo.mn/newsn/story/toorson-irgen-6528e165cc957235249051.jpg);
 }
-#story5{
+#story5 {
   background-image: url(https://mgl.gogo.mn/newsn/story/311756-13102023-1697155530-908111805-photo-2023-10-10-10-21-23-4-jpg-6528e11d29500274274526.jpg);
 }
-#story6{
+#story6 {
   background-image: url(https://mgl.gogo.mn/newsn/story/311708-12102023-1697069940-747207947-39aa022e981a6df629e3c04b668f1d6e26-will-jada-smith-1-652799c68687e425135239.jpg);
 }
-.gogostory_box img{
+.gogostory_box img {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 10px;
   left: 10px;
 }
-.gogostory_content_box{
+.gogostory_content_box {
   width: 100%;
-  height: 2.2em;
+  max-height: 2.2em;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.48, -0.28, 0.41, 1.4);
   color: white;
@@ -240,19 +260,22 @@ h3 {
   bottom: 25px;
   margin-bottom: 10px;
 }
-.gogostory_box:hover .gogostory_content_box{
-  width: 100%;
-  height: 6em;
-  transform: translateY(0em); 
+.gogostory_content {
+  padding-right: 5px;
 }
-.gogostory_box .feedback_box{
+.gogostory_box:hover .gogostory_content_box {
+  width: 100%;
+  max-height: 6em;
+  transform: translateY(0em);
+}
+.gogostory_box .feedback_box {
   margin-top: 15px;
   color: white;
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
-.blue_text{
+.blue_text {
   color: #fff;
   background-color: #00b0f4;
   border-radius: 3px;
@@ -262,46 +285,94 @@ h3 {
   margin-left: 5px;
   margin-top: 8px;
 }
+/* big news hesgiin style */
 .big_news_list {
   display: flex;
   width: 100%;
   margin-top: 30px;
 }
-.historical_news{
+.historical_news {
   width: 70%;
   display: flex;
   flex-direction: column;
 }
-.historical_news_topline{
+.historical_news_topline {
   display: flex;
   flex-direction: column;
 }
-.historical_news_topline_heading{
+.historical_news_topline_heading {
   display: flex;
   margin-bottom: 5px;
 }
-.historical_news_topline_heading span{
+.historical_news_topline_heading span {
   font-size: 16px;
   font-weight: 700;
   color: #407ce8;
   font-family: Arial, Helvetica, sans-serif;
 }
-.historical_news_topline_heading img{
+.historical_news_topline_heading img {
   width: 23px;
   height: 26px;
   margin-left: 5px;
 }
-.historical_news_dates{
+.historical_news_dates {
   display: flex;
+  column-gap: 15px;
+  margin-bottom: 30px;
 }
-.historical_news_date{
+.historical_news_dates #todaynews .blue_line_datebox {
+  background-color: #407ce8;
+}
+.historical_news_dates #todaynews .blue_line_date {
+  color: #407ce8;
+}
+
+.historical_news_date {
   display: flex;
   flex-direction: column;
 }
-.blue_line_datebox{
-  
+.blue_line_datebox {
+  background-color: #efefef;
+  border-radius: 20px;
+  height: 7px;
+  width: 100px;
 }
-.highlighted_news{
+.blue_line_date {
+  text-align: center;
+  margin-top: 5px;
+  color: #b7b6b6;
+}
+.historical_news_date:hover .blue_line_datebox {
+  background-color: #407ce8;
+  transform: translateY(-0.2em);
+}
+.historical_news_date:hover .blue_line_date {
+  color: #407ce8;
+  transform: translateY(-0.2em);
+}
+/* ug n ene butemjtei bolvol ih saihan zuil bolno */
+.historical_news_date:not(#todaynews):hover ~ #todaynews .blue_line_date {
+  color: #b7b6b6;
+}
+/* ug n ene butemjtei bolvol ih saihan zuil bolno */
+.historical_news_date:hover:not(#todaynews) ~ #todaynews .blue_line_datebox {
+  background-color: #efefef;
+}
+.historical_news_calendar {
+  width: 27px;
+  height: 27px;
+  background-color: #efefef;
+  color: #b7b6b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.historical_news_calendar:hover {
+  background-color: #407ce8;
+  color: white;
+}
+.highlighted_news {
   width: 30%;
   display: flex;
   flex-direction: column;
