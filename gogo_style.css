@@ -179,3 +179,130 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
+/* gogo story styles */
+.gogostory{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.gogostory_title{
+  display: flex;
+}
+.gogostory_container{
+  display: flex;
+  justify-content: space-around;
+}
+.gogostory_box{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 235px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+}
+#story1{
+  background-image: url(https://mgl.gogo.mn/newsn/story/jims-652a16b7015d4276129668.jpeg);
+}
+#story2{
+  background-image: url(https://mgl.gogo.mn/newsn/story/1-652a162a32c25283591857.jpeg);
+}
+#story3{
+  background-image: url(https://mgl.gogo.mn/newsn/story/hulgai-6528e1a0536bf106260238.jpg);
+}
+#story4{
+  background-image: url(https://mgl.gogo.mn/newsn/story/toorson-irgen-6528e165cc957235249051.jpg);
+}
+#story5{
+  background-image: url(https://mgl.gogo.mn/newsn/story/311756-13102023-1697155530-908111805-photo-2023-10-10-10-21-23-4-jpg-6528e11d29500274274526.jpg);
+}
+#story6{
+  background-image: url(https://mgl.gogo.mn/newsn/story/311708-12102023-1697069940-747207947-39aa022e981a6df629e3c04b668f1d6e26-will-jada-smith-1-652799c68687e425135239.jpg);
+}
+.gogostory_box img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.gogostory_content_box{
+  width: 100%;
+  height: 2.2em;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.48, -0.28, 0.41, 1.4);
+  color: white;
+  position: absolute;
+  left: 7px;
+  bottom: 25px;
+  margin-bottom: 10px;
+}
+.gogostory_box:hover .gogostory_content_box{
+  width: 100%;
+  height: 6em;
+  transform: translateY(0em); 
+}
+.gogostory_box .feedback_box{
+  margin-top: 15px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.blue_text{
+  color: #fff;
+  background-color: #00b0f4;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+.big_news_list {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+.historical_news{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.historical_news_topline{
+  display: flex;
+  flex-direction: column;
+}
+.historical_news_topline_heading{
+  display: flex;
+  margin-bottom: 5px;
+}
+.historical_news_topline_heading span{
+  font-size: 16px;
+  font-weight: 700;
+  color: #407ce8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.historical_news_topline_heading img{
+  width: 23px;
+  height: 26px;
+  margin-left: 5px;
+}
+.historical_news_dates{
+  display: flex;
+}
+.historical_news_date{
+  display: flex;
+  flex-direction: column;
+}
+.blue_line_datebox{
+  
+}
+.highlighted_news{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
