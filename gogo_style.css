@@ -15,7 +15,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-top: 25px;
-}   
+}
 .header_flexstart {
   display: flex;
   justify-content: flex-start;
@@ -150,8 +150,10 @@ i {
   z-index: 0;
   opacity: 0;
 }
-@media only screen and (max-width:450px) {
-  .header_flexstart { display: none;}
+@media only screen and (max-width: 450px) {
+  .header_flexstart {
+    display: none;
+  }
 }
 
 /* top news container */
@@ -400,6 +402,7 @@ h3 {
   width: 70%;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #b7b6b6;
 }
 .historical_news_topline {
   display: flex;
@@ -481,4 +484,148 @@ h3 {
   width: 30%;
   display: flex;
   flex-direction: column;
+}
+.historical_news_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.historical_news_box {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  column-gap: 30px;
+  padding: 0 70px 0 0;
+  margin-bottom: 25px;
+}
+.historical_news_container_img {
+  position: relative;
+  width: 100%;
+}
+.historical_news_container_img span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+.historical_news_container_img .transparency_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #444242;
+  border-radius: 5px;
+}
+.historical_news_box_img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  background-position: center;
+  border-radius: 5px;
+}
+#historical_news1 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/311949-18102023-1697613471-1776222630-Samdan1.jpg);
+}
+#historical_news3 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2018/10/231592-16102018-1539652740-214101712-school_police.jpg);
+}
+#historical_news2 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/10/311956-18102023-1697619570-2064634004-tailor.jpg);
+}
+#historical_news4 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/-18102023-1697616214-931458002-news_cover.jpg);
+}
+#historical_news5 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/311952-18102023-1697615969-848017156-Nom%C4%B1nchimeg.jpg);
+}
+#historical_news6 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/08/310231-31082023-1693461121-1851858686-aqua.jpeg);
+}
+#historical_news7 {
+  background-image: url(hhttps://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/-18102023-1697613474-776326137-%D0%A1%D0%A3%D0%98%D0%A1.jpg);
+}
+
+.historical_news_container_img:hover .transparency_box {
+  opacity: 0.5;
+}
+.historical_news_container_img:hover span {
+  opacity: 1;
+}
+.historical_news_container_img:hover .historical_news_box_img {
+  background-size: 110%;
+}
+.historical_news_content_box {
+  display: flex;
+  flex-direction: column;
+  width: 180%;
+}
+.historical_news_content_box h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.historical_news_content_box .historical_news_content_p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #888888;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 3.2em;
+  overflow: hidden;
+  line-height: 25px;
+}
+.historical_news_content_box .feedback_holder_subtop {
+  color: #888888;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+}
+.historical_news_content_box .feedback_box i {
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+.historical_news_ad {
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 70px;
+  padding: 0 70px 0 0;
+  margin-bottom: 25px;
+}
+.historical_news_ad img {
+  width: 100%;
+}
+.more_container {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.more_box {
+  width: calc(100% - 70px);
+  background-color: #f8f8f8;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 700;
+}
+.more_box i {
+  color: gray;
 }
