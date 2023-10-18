@@ -15,7 +15,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-top: 25px;
-}
+}   
 .header_flexstart {
   display: flex;
   justify-content: flex-start;
@@ -48,6 +48,8 @@ header {
   display: none;
 }
 ul {
+  height: 250px;
+  width: 360px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -56,11 +58,9 @@ ul {
   left: 0;
   row-gap: 20px;
   column-gap: 10px;
-  padding-bottom: 10px;
   box-sizing: border-box;
-  height: 250px;
-  width: 360px;
-  background-color: white;
+  padding-bottom: 10px;
+  background-color: gray;
   border-radius: 10px;
 }
 li {
@@ -118,16 +118,25 @@ i {
 }
 .checkbox {
   position: absolute;
-  left: 56.5%;
+  left: 58%;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
 }
 .checkbox:checked ~ .search_line {
   display: block;
 }
+.button1 {
+  position: absolute;
+  left: 57.5%;
+  z-index: 1;
+  opacity: 1;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
 .button2 {
   position: absolute;
-  left: 56%;
+  left: 57.5%;
   z-index: 0;
   opacity: 0;
   margin-bottom: 5px;
@@ -140,6 +149,9 @@ i {
 .checkbox:checked ~ .button1 {
   z-index: 0;
   opacity: 0;
+}
+@media only screen and (max-width:450px) {
+  .header_flexstart { display: none;}
 }
 
 /* top news container */

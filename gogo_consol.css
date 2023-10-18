@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* === HEADER STYLES === */
+body{
+    display: flex;
+    justify-content: center;
+}
+header {
+    width: 1200px;
+    display: flex;
+    padding-top: 3px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+/* 1. HEADER_Flexstart > gogo logo and news menu */
+.header_flexstart_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.header_gogo_logo_box{
+    margin-right: 25px;
+}
+
+.header_news_menu_container {
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_news_menu_info {
+    display: flex;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.header_news_menu_info i{
+    align-self: center;
+    margin-left: 5px;
+}
+/* 2. HEADER_Flexstart > search box */
+.header_search_box{
+    position: relative;
+    margin-left: 25px;
+}
+.checkbox {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.search_line{
+    position: absolute;
+    left: -545px;
+    top: 0;
+    display: none;
+    width: 520px;
+    height: 2.5em;
+    margin-bottom: 20px;
+    border: solid #407ce8;
+    border-radius: 5px; 
+}
+.button1 {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    opacity: 1;
+}
+.button2 {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+}
+.checkbox:checked ~ .search_line {
+    display: block;
+  }
+.checkbox:checked ~ .button2 {
+    z-index: 1;
+    opacity: 1;
+    color: #407ce8;
+}
+.checkbox:checked ~ .button1 {
+    z-index: 0;
+    opacity: 0;
+}
+
+/* 3. HEADER_Flexend > 3 general box */
+.header_flexend_container {
+    display: flex;
+    justify-content: flex-end;
+}
+.header_general_3box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    row-gap: 7px;
+}
+.header_general_subbox {
+    display: flex;
+    column-gap: 10px;
+}
+.header_general_subheading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: right;
+    white-space: pre;
+}
+.header_general_quantity {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+.header_general_3box #weather {
+    color: rgb(233, 167, 45);
+}
+.header_general_3box #calendar {
+    color: rgb(54, 157, 212);
+}
+.header_general_3box #FX {
+    color: rgb(86, 221, 45);
+}
+.header_general_subbox span {
+    color: rgb(188, 179, 179);
+}
+/* 4. HEADER - pad and mobile style */
+@media only screen and (max-width: 850px) {
+    .header { 
+        width: 100vw;
+        display: flex;
+        justify-content: flex-start;}
+    .header_news_menu_container {width: 0px;display: none; }
+    .header_search_box{display: none;}
+    .header_gogo_logo_box {
+        margin-left: 10px;}
+    .header_general_quantity{
+        font-size: 14px;}
+    .header_general_subheading{ font-size: 10px;}
+}
