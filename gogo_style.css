@@ -295,6 +295,7 @@ h2 {
   color: #8e8e8e;
   gap: 5px;
 }
+
 /* subtop news test styles */
 h3 {
   font-family: Arial, Helvetica, sans-serif;
@@ -536,6 +537,7 @@ h3 {
   transition: all 0.5s ease-in-out;
   background-position: center;
   border-radius: 5px;
+  transition: all 0.5s ease;
 }
 #historical_news1 {
   background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/311949-18102023-1697613471-1776222630-Samdan1.jpg);
@@ -556,7 +558,31 @@ h3 {
   background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/08/310231-31082023-1693461121-1851858686-aqua.jpeg);
 }
 #historical_news7 {
-  background-image: url(hhttps://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/-18102023-1697613474-776326137-%D0%A1%D0%A3%D0%98%D0%A1.jpg);
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/-20102023-1697777976-1724811316-asdasd-7bwqu4b6114i0ou3cpret5d9nl05vqt0v5mqccm0lkw.jpg);
+}
+#historical_news8 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/thumbnail/1000/images/ck/2022/11/19/Ger_horoolol1-153620-1029115178.jpeg);
+}
+#historical_news9 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/312016-20102023-1697775095-1127920845-asdasd-7bwqu4b6114i0ou3cpret5d9nl05vqt0v5mqccm0lkw.jpg);
+}
+#historical_news10 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/312013-20102023-1697774185-838306837-taylor-swift-mtv-europe-music-awards-2022-111422-2-25b2954054cf45c4a8127ed2aaf85ea4.jpg);
+}
+#historical_news11 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/thumbnail/1000/images/c/2021/04/278015-26042021-1619399868-724071071-davaasuren.jpg);
+}
+#historical_news12 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/312011-20102023-1697772216-1302427824-asdasd-7bwqu4b6114i0ou3cpret5d9nl05vqt0v5mqccm0lkw.jpg);
+}
+#historical_news13 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/thumbnail/1000/images/c/2023/06/307481-14062023-1686730752-297466343-zuslan_11.jpg);
+}
+#historical_news14 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/-20102023-1697771103-1003977903-ns.jpg);
+}
+#historical_news15 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/-20102023-1697770974-1313334650-asdasd-7bwqu4b6114i0ou3cpret5d9nl05vqt0v5mqccm0lkw.jpg);
 }
 
 .historical_news_container_img:hover .transparency_box {
@@ -589,7 +615,7 @@ h3 {
   overflow: hidden;
   line-height: 25px;
 }
-.historical_news_content_box .feedback_holder_subtop {
+.historical_news_content_box .feedback_holder_subtop p {
   color: #888888;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -640,6 +666,7 @@ h3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 50px;
 }
 h5 {
   font-family: Arial, Helvetica, sans-serif;
@@ -656,16 +683,40 @@ h5 {
   background-size: 100% 100%;
   margin-right: 10px;
 }
-.highlighted_news_box {
+.highlighted_news_box{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 25px;
+  row-gap: 10px;
+  margin-bottom: 30px;
 }
 .highlighted_news_container_img {
   position: relative;
   width: 100%;
+  height: 170px;
+}
+.highlighted_news_box_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  background-position: center;
+  border-radius: 5px;
+}
+#highlighted_news1{
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/10/311999-20102023-1697762650-466483631-WeChat_Image_20231019140955.jpg);
+}
+#highlighted_news2{
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/312004-20102023-1697766463-1192507748-393351181_258104753892973_592995640008534148_n.jpg);
+}
+#highlighted_news3{
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/-20102023-1697771103-1003977903-ns.jpg);
+}
+#highlighted_news4{
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/thumbnail/1000/images/c/2023/06/307481-14062023-1686730752-297466343-zuslan_11.jpg);
 }
 .highlighted_news_container_img span {
   position: absolute;
@@ -681,6 +732,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 .highlighted_news_container_img .transparency_box {
   position: absolute;
@@ -692,15 +744,34 @@ h5 {
   background-color: #444242;
   border-radius: 5px;
 }
-.highlighted_news_box_img {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.5s ease-in-out;
-  background-position: center;
-  border-radius: 5px;
-}
+
 #highlighted_news1 {
-  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/311973-19102023-1697685170-432267997-0f049191a0be463d81a8001c4ed159f3.jpeg);
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/311999-20102023-1697762650-466483631-WeChat_Image_20231019140955.jpg);
 }
+.highlighted_news_container_img:hover .transparency_box {
+  opacity: 0.5;
+}
+.highlighted_news_container_img:hover span {
+  opacity: 1;
+}
+.highlighted_news_container_img:hover .highlighted_news_box_img {
+  background-size: 110%;
+}
+.highlihted_news_content_box {
+  display: flex;
+  flex-direction: column;
+}
+.highlihted_news_content_box h4{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.highlighted_news_content_box .feedback_box p{
+  font-size: 12px;
+}
+.highlighted_news_content_box .feedback_box {
+  margin-top: 15px;
+}
+
