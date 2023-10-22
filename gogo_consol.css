@@ -5,7 +5,9 @@
 /* ===== HEADER STYLES ===== */
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 header {
     width: 1200px;
@@ -237,4 +239,193 @@ li::before{
     .header_general_3box { margin-left: 0px; border: solid 1px gainsboro;border-radius: 3px; padding: 3px;}
     .header_general_container { justify-content: flex-start;column-gap: 8px;}
     .header_general_menu_mobile {display: block;margin: 5px; align-self: center;}
+}
+/* =====FONT STYLES===== */
+.font12{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font13{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font14{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font15{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font16{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font18{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font19{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font20{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font26{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font46{
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bold1{
+    font-weight: 500;
+}
+.bold2 {
+    font-weight: 600;
+}
+.bold3 {
+    font-weight: 700;
+}
+.white {
+    color: white;
+}
+.blue {
+    color: #407ce8;
+}
+.gray1 {
+    color: #b7b6b6;
+}
+.gray2 {
+    color: #888888;
+}
+/* ===== BOX STYLES ===== */
+.border-round5{
+    border-radius: 5px;
+}
+.border-round10 {
+    border-radius: 10px;
+}
+.border-round100{
+    border-radius: 100px;
+}
+/* ===== IMAGE STYLES ===== */
+.opacity_readnews {
+    position: relative;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.img_box{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: center;
+    transition: all 1s ease-in-out;
+}
+.opacity_readnews span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.opacity_readnews .transparency_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #444242;
+  }
+.opacity_readnews:hover .transparency_box {
+    opacity: 0.5;
+}
+.opacity_readnews:hover span {
+    opacity: 1;
+}
+.opacity_readnews:hover .img_box {
+    background-size: 190%;
+}
+
+/* ===== TOP NEWS HESEG ===== */
+.top_news_container {
+    width: 1200px;
+    display: flex;
+    margin-top: 50px;
+}
+/* 1. top news content heseg */
+.top_news_info {
+    width: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    row-gap: 25px;
+    background-image: linear-gradient(90deg, #f4f2f0, #ffffff);
+    text-shadow: 1px 1px 1px hsla(0, 33%, 19%, 0.004);
+}
+.text_top_news {
+    line-height: 20px;
+    opacity: 0.4;
+}
+.yellow_round {
+    padding: 8px 15px;
+    background-image: linear-gradient(-120deg, #e08100, #c90027);
+    inline-size: max-content;
+}
+.gray_round {
+    display: flex;
+    background-color: #e7e7e7;
+    text-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.004);
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    inline-size: max-content;
+}
+.text_gray_round {
+    color: #767676;
+    line-height: 24px;
+}
+.gray_round i {
+    color: gray;
+    margin-right: 5px;
+}
+/* 2.top news zuragnii heseg */
+#img_top_news {
+    background-image: url("https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/311771-13102023-1697169999-1044642779-nuur.jpg");
+  }
+.opacity_readnews {
+    width: 50%;
+}
+/* 3. top news hover heseg */
+.yellow_round:hover{
+    padding: 8px 20px;
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+.gray_round:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.top_news_info h2:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.top_news_info p:hover{
+    cursor: pointer;
+}
+/* 4. mobile visual heseg */
+@media only screen and (max-width: 850px) {
+    .top_news_container {display: none;}
 }
