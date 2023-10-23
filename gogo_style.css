@@ -467,6 +467,8 @@ h3 {
 .historical_news_date:hover:not(#todaynews) ~ #todaynews .blue_line_datebox {
   background-color: #efefef;
 }
+
+
 .historical_news_calendar {
   width: 27px;
   height: 27px;
@@ -1026,4 +1028,197 @@ hr {
   background-size: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.lifeform_box:hover .lifeform_bx_img {
+  background-size: 190%;
+}
+
+.lifeform_box_content span{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.lifeform_box_content{
+  height: 100px;
+  border: #b7b6b6 solid 1px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lifeform_box:hover .lifeform_box_img{
+  background-size: 160%;
+}
+
+/* технологи */
+.tech{
+  margin-top: 50px;
+}
+.tech_title h4::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  background-image: url("https://mgl.gogo.mn//newsn/v4/images/tech.a4b28dbb.png");
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+
+.tech_box_img {
+  width: 100%;
+  height: 230px;
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/312024-20102023-1697784918-531978099-4faf3ae9-dd8f-4dc2-9651-43f497e2c3f8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+h4{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lifeform_box:hover .tech_box_img{
+  background-size: 160%;
+}
+
+/* footer section */
+footer{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin-top: 50px;
+}
+.live{
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+}
+.live_content_container{
+  width: 100%;
+}
+.live_news_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 30px;
+  width: 24%;
+}
+.live_news_container_img {
+  position: relative;
+  width: 100%;
+  height: 170px;
+}
+.live_news_box_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  background-position: center;
+  border-radius: 5px;
+}
+.live_news_container_img span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.live_news_container_img .transparency_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #444242;
+  border-radius: 5px;
+}
+
+#highlighted_news1 {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/10/311999-20102023-1697762650-466483631-WeChat_Image_20231019140955.jpg);
+}
+.live_news_container_img:hover .transparency_box {
+  opacity: 0.5;
+}
+.live_news_container_img:hover span {
+  opacity: 1;
+}
+.live_news_container_img:hover .highlighted_news_box_img {
+  background-size: 110%;
+}
+.live_news_content_box {
+  display: flex;
+  flex-direction: column;
+}
+.live_news_content_box h5 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b7b6b6;
+}
+.live_news_content_box .feedback_box p {
+  font-size: 12px;
+}
+.live_news_content_box .feedback_box {
+  margin-top: 15px;
+}
+.live h4{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.live h4::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  background-image: url("https://mgl.gogo.mn//newsn/v4/images/play-btn.12e64771.svg");
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+.live_content_container{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+.call {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
 }
